@@ -6,34 +6,95 @@ body {
     max-width: 1920px;
     min-width: 540px;
 }
+$blue: #6FCBFF;
+$gray: #414141;
+$light_gray:#F9F9F9;
+.btn {
+    background: none;
+    border: 1px solid $blue;
+    border-radius: 4em;
+    color: $gray;
+    text-transform: uppercase;
+    &:hover {
+        color: $light_gray;
+        background: $blue;
+    }
+    &:focus {
+        color: $light_gray;
+        background: rgba(110, 203, 255, 0.5);
+    }
+
+}
 .header {
     display: flex;
     justify-content: space-around;
+    color: $gray;
     .logo {
-        
+        width: 5em;
+        height: 5em;
+        background: url('./assets/logo\ 2.png') no-repeat;
+        width: 10%;
     }
     .menu {
         display: flex;        
         list-style: none;
+        justify-content: space-between;
+        width: 30%;
+        li:hover {
+            color: $blue;
+        }
     }
     .contact_buttons {
-        display: flex;        
+        display: flex; 
+        align-content: center; 
+        justify-content: space-between;
+        width: 15%; 
+        height: 2em;
     }
 }
 
 .main_container {
     display: flex;
+    justify-content: space-around;
+    color: $gray;
+    .main_text {
+        position: fixed;
+        top: 30%;        
+        font-size: 13em;
+        color: $light_gray;
+        font-family: "Termina" serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: -1;
+    }
     .top_main {
-        display: flex;
-        .first_part {
-           p {
-               transform: rotate(-90deg);
+        display: flex;        
+        .first_part {  
+            padding-top: 20%;
+            margin-left: -3%; 
+            width: 5em;         
+           p {               
+               transform: rotate(-90deg);               
+               color: $blue;
+               width: 5em;
             } 
         }
         .second_part {
-            width: 20em;            
+            width: 10em;            
         }
         .third_part {
+            .main_info {
+                width: 30em;
+                background: white;
+                position: relative;
+                top: 40%;
+                left: -10%;
+                h1 {
+                    color: $blue;
+                    font-size: 3em;
+                    font-weight: 100;
+                }
+            }
             width: 50em;
             height: 30em;
             background-image: url("./assets/Rectangle.png");
@@ -43,8 +104,38 @@ body {
     }
     .numbers {
         list-style: none;
+        li  {
+            margin-bottom: 2em;
+            &:hover {
+                color: $blue;
+                font-size: 2em;
+                
+            } 
+            &:focus {
+                color: $blue;
+                font-size: 2em;
+            } 
+        }        
+    }
+}
+.foot_btn {
+    border: none;
+    background: none;
+    color: $blue;
+    height: 2.2em;
+    &:hover {
+        border-radius: 4em;
+        border: 1px solid $blue;
+    }
+    &:focus {
+        border-radius: 4em;
+        border: 1px solid $blue;
+        color: rgba(110, 203, 255, 0.5);
     }
 }
 .footer {
     display: flex;
+    justify-content: space-between;
+    padding-left: 5%; 
+    padding-right: 5%; 
 }
