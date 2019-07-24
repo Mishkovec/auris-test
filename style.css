@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
   max-width: 1920px;
-  min-width: 540px; }
+  min-width: 540px;
+  font-family: 'Montserrat', sans-serif; }
 
 .btn {
   background: none;
@@ -17,30 +19,42 @@ body {
     background: #6FCBFF; }
   .btn:focus {
     color: #F9F9F9;
-    background: rgba(110, 203, 255, 0.5); }
+    background: rgba(110, 203, 255, 0.5);
+    outline: none !important; }
 
 .header {
   display: flex;
   justify-content: space-around;
   color: #414141; }
   .header .logo {
-    width: 5em;
+    margin-top: 2.5em;
+    margin-left: -4.2em;
+    width: 10%;
     height: 5em;
-    background: url("./assets/logo 2.png") no-repeat;
-    width: 10%; }
+    background: url("./assets/logo 2.png") no-repeat; }
   .header .menu {
+    margin-top: 3.6em;
+    margin-left: 1em;
     display: flex;
     list-style: none;
+    font-size: 1.2em;
     justify-content: space-between;
     width: 30%; }
     .header .menu li:hover {
       color: #6FCBFF; }
   .header .contact_buttons {
+    margin-top: 4.1em;
+    margin-left: 0em;
     display: flex;
     align-content: center;
     justify-content: space-between;
     width: 15%;
-    height: 2em; }
+    height: 1.8em; }
+    .header .contact_buttons .phone {
+      margin-left: 5em; }
+    .header .contact_buttons .contact_us {
+      margin-right: -5em;
+      width: 10em; }
 
 .main_container {
   display: flex;
@@ -49,7 +63,7 @@ body {
   .main_container .main_text {
     position: fixed;
     top: 30%;
-    font-size: 13em;
+    font-size: 18em;
     color: #F9F9F9;
     font-family: "Termina" serif;
     font-weight: bold;
@@ -64,29 +78,42 @@ body {
       .main_container .top_main .first_part p {
         transform: rotate(-90deg);
         color: #6FCBFF;
-        width: 5em; }
+        width: 8em;
+        font-size: 1.4em;
+        text-transform: uppercase; }
     .main_container .top_main .second_part {
-      width: 10em; }
+      width: 19em; }
     .main_container .top_main .third_part {
-      width: 50em;
-      height: 30em;
+      margin-top: 2.3em;
+      width: 80em;
+      height: 51em;
       background-image: url("./assets/Rectangle.png");
       background-size: cover;
       background-repeat: no-repeat; }
       .main_container .top_main .third_part .main_info {
-        width: 30em;
+        width: 57em;
+        height: 27em;
         background: white;
         position: relative;
-        top: 40%;
-        left: -10%; }
+        top: 30%;
+        left: -17%; }
         .main_container .top_main .third_part .main_info h1 {
           color: #6FCBFF;
-          font-size: 3em;
+          font-size: 5em;
           font-weight: 100; }
+        .main_container .top_main .third_part .main_info .read_more {
+          margin-top: 0.7em;
+          margin-left: 2.8em;
+          height: 2.5em;
+          width: 12em;
+          font-size: 1.4em; }
   .main_container .numbers {
-    list-style: none; }
+    list-style: none;
+    margin-top: 10em;
+    margin-left: -5em; }
     .main_container .numbers li {
-      margin-bottom: 2em; }
+      height: 6em;
+      vertical-align: middle; }
       .main_container .numbers li:hover {
         color: #6FCBFF;
         font-size: 2em; }
@@ -98,19 +125,30 @@ body {
   border: none;
   background: none;
   color: #6FCBFF;
-  height: 2.2em; }
+  height: 1.8em;
+  font-size: 1.2em; }
   .foot_btn:hover {
     border-radius: 4em;
     border: 1px solid #6FCBFF; }
   .foot_btn:focus {
     border-radius: 4em;
     border: 1px solid #6FCBFF;
-    color: rgba(110, 203, 255, 0.5); }
+    color: rgba(110, 203, 255, 0.5);
+    outline: none !important; }
 
 .footer {
   display: flex;
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%; }
+
+.blue {
+  color: darkcyan; }
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  border: 0; }
 
 /*# sourceMappingURL=style.css.map */
