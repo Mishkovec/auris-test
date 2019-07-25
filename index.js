@@ -35,9 +35,9 @@ num5.onclick = function() {
     first_part.style.marginTop = '3%';
     first_part.style.marginLeft = '5%';
     second_part.style.width = '33%';
-    second_part.style.marginTop = '20%';
-    second_part.innerHTML = `<h2>CUSTOM <span class = 'blue'>.NET</span> DEVELOPMENT</h2>
-                            <p>Aurius develops custom enterprise and consumer .NET and .Net Core - based software solutions of different complexity across various domains, platforms, and devices.</p> `;
+    second_part.style.marginTop = '15%';
+    second_part.innerHTML = `<h2 style="font-size: 3em;">CUSTOM <span class = 'blue'>.NET</span> DEVELOPMENT</h2>
+                            <p style="font-size: 1.5em;">Aurius develops custom enterprise and consumer .NET and .Net Core - based software solutions of different complexity across various domains, platforms, and devices.</p> `;
     third_part.innerHTML = '';
     third_part.style.width = '27em';
     third_part.style.marginTop = '8%';
