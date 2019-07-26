@@ -76,7 +76,7 @@ $light_gray:#F9F9F9;
     color: $gray;
     .main_text {
         position: fixed;
-        top: 30%;        
+        top: 20%;        
         font-size: 18em;
         overflow: hidden;        
         color: $light_gray;
@@ -87,7 +87,8 @@ $light_gray:#F9F9F9;
     }
     .top_main {
         display: flex;        
-        .first_part {  
+        .first_part { 
+            display: block; 
             padding-top: 20%;
             margin-left: -3%; 
             width: 5em;         
@@ -100,9 +101,11 @@ $light_gray:#F9F9F9;
             } 
         }
         .second_part {
+            display: block;
             width: 19em;            
         }
         .third_part {
+            display: block;
             .main_info {
                 width: 57em;
                 height: 27em;
@@ -129,15 +132,45 @@ $light_gray:#F9F9F9;
             background-image: url("./assets/Rectangle.png");
             background-size: cover;
             background-repeat: no-repeat;
+        }        
+    }
+    .second_page_block1 {
+        display: none;            
+        width: 34%;
+        height: 50em;
+        margin-top: 3%;
+        margin-left: 0%;
+        background: url('./assets/Rectangle1.png') no-repeat;
+        background-size: cover;
+    }
+    .second_page_block2 {
+        display: none;
+        width: 33%;
+        margin-top: 15%;
+        margin-left: -15%;
+        h2 {
+            font-size: 3em;
         }
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .second_page_block3 {
+        display: none;
+        width: 27em;
+        margin-top:8%;
+        margin-left: -5%; 
+        background: url('./assets/Rectangle2.png') no-repeat; 
+        background-size: cover;
     }
     .numbers {
         list-style: none;
         margin-top: 10em;
-            margin-left: -5em;
-        li  {
+        margin-left: -5em;        
+        li  {            
             height: 6em;            
             vertical-align: middle;
+            cursor: pointer;            
             &:hover {
                 color: $blue;
                 font-size: 2em;
@@ -177,9 +210,71 @@ $light_gray:#F9F9F9;
 .blue {
     color: darkcyan;
 }
+
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
     border: 0;
+}
+@media only screen and (max-width:1400px){
+    header .contact_buttons {
+        width: 30%; 
+    }
+    .main_container {
+    .top_main {
+    .third_part {
+        .main_info {
+            width: 40em;
+            height: 20em;            
+            top: 25%;
+            left: -10%;                
+            h1 {                
+                font-size: 4em;                
+            }
+            .read_more {                
+                height: 2em;
+                width: 10em;
+                font-size: 1em;
+            }
+        }        
+        width: 55em;
+        height: 35em;        
+    }
+}
+    .second_page_block1 {                   
+        width: 25%;
+        height: 30em;
+        margin-top: 3%;
+        margin-left: 0%;        
+    }
+    .second_page_block2 {        
+        width: 25%;
+        margin-top: 10%;
+        margin-left: -5%;
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+    .second_page_block3 {        
+        width: 20%;
+        margin-top:8%;
+        margin-left: -5%;         
+    }
+}
+}
+@media only screen and (max-width:1280px){
+    
+}
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:540px){
+    
+}
+@media only screen and (max-width:480px){
+    
 }

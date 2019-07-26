@@ -62,7 +62,7 @@ body {
   color: #414141; }
   .main_container .main_text {
     position: fixed;
-    top: 30%;
+    top: 20%;
     font-size: 18em;
     overflow: hidden;
     color: #F9F9F9;
@@ -73,6 +73,7 @@ body {
   .main_container .top_main {
     display: flex; }
     .main_container .top_main .first_part {
+      display: block;
       padding-top: 20%;
       margin-left: -3%;
       width: 5em; }
@@ -83,8 +84,10 @@ body {
         font-size: 1.4em;
         text-transform: uppercase; }
     .main_container .top_main .second_part {
+      display: block;
       width: 19em; }
     .main_container .top_main .third_part {
+      display: block;
       margin-top: 2.3em;
       width: 80em;
       height: 51em;
@@ -108,13 +111,38 @@ body {
           height: 2.5em;
           width: 12em;
           font-size: 1.4em; }
+  .main_container .second_page_block1 {
+    display: none;
+    width: 34%;
+    height: 50em;
+    margin-top: 3%;
+    margin-left: 0%;
+    background: url("./assets/Rectangle1.png") no-repeat;
+    background-size: cover; }
+  .main_container .second_page_block2 {
+    display: none;
+    width: 33%;
+    margin-top: 15%;
+    margin-left: -15%; }
+    .main_container .second_page_block2 h2 {
+      font-size: 3em; }
+    .main_container .second_page_block2 p {
+      font-size: 1.5em; }
+  .main_container .second_page_block3 {
+    display: none;
+    width: 27em;
+    margin-top: 8%;
+    margin-left: -5%;
+    background: url("./assets/Rectangle2.png") no-repeat;
+    background-size: cover; }
   .main_container .numbers {
     list-style: none;
     margin-top: 10em;
     margin-left: -5em; }
     .main_container .numbers li {
       height: 6em;
-      vertical-align: middle; }
+      vertical-align: middle;
+      cursor: pointer; }
       .main_container .numbers li:hover {
         color: #6FCBFF;
         font-size: 2em; }
@@ -151,5 +179,41 @@ input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   border: 0; }
+
+@media only screen and (max-width: 1400px) {
+  header .contact_buttons {
+    width: 30%; }
+
+  .main_container .top_main .third_part {
+    width: 55em;
+    height: 35em; }
+    .main_container .top_main .third_part .main_info {
+      width: 40em;
+      height: 20em;
+      top: 25%;
+      left: -10%; }
+      .main_container .top_main .third_part .main_info h1 {
+        font-size: 4em; }
+      .main_container .top_main .third_part .main_info .read_more {
+        height: 2em;
+        width: 10em;
+        font-size: 1em; }
+  .main_container .second_page_block1 {
+    width: 25%;
+    height: 30em;
+    margin-top: 3%;
+    margin-left: 0%; }
+  .main_container .second_page_block2 {
+    width: 25%;
+    margin-top: 10%;
+    margin-left: -5%; }
+    .main_container .second_page_block2 h2 {
+      font-size: 2em; }
+    .main_container .second_page_block2 p {
+      font-size: 1em; }
+  .main_container .second_page_block3 {
+    width: 20%;
+    margin-top: 8%;
+    margin-left: -5%; } }
 
 /*# sourceMappingURL=style.css.map */
