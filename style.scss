@@ -38,7 +38,8 @@ $light_gray:#F9F9F9;
         margin-left: -4.2em;
         width: 10%;
         height: 5em;
-        background: url('./assets/logo\ 2.png') no-repeat;        
+        background: url('./assets/logo\ 2.png') no-repeat;  
+        background-size: cover;      
     }
     .menu {
         margin-top: 3.6em;
@@ -86,28 +87,28 @@ $light_gray:#F9F9F9;
         z-index: -1;
     }
     .top_main {
-        display: flex;        
+        display: flex;                
         .first_part { 
             display: block; 
             padding-top: 20%;
             margin-left: -3%; 
-            width: 5em;         
+            width: 15%;         
            p {               
                transform: rotate(-90deg);               
                color: $blue;
-               width: 8em;
+               width: 12em;
                font-size: 1.4em;
                text-transform: uppercase;
             } 
         }
         .second_part {
             display: block;
-            width: 19em;            
+            width: 10%;            
         }
         .third_part {
             display: block;
             .main_info {
-                width: 57em;
+                width: 70%;
                 height: 27em;
                 background: white;
                 position: relative;
@@ -115,7 +116,7 @@ $light_gray:#F9F9F9;
                 left: -17%;                
                 h1 {
                     color: $blue;
-                    font-size: 5em;
+                    font-size: 4em;
                     font-weight: 100;
                 }
                 .read_more {
@@ -127,7 +128,7 @@ $light_gray:#F9F9F9;
                 }
             }
             margin-top: 2.3em;
-            width: 80em;
+            width: 75%;
             height: 51em;
             background-image: url("./assets/Rectangle.png");
             background-size: cover;
@@ -136,18 +137,18 @@ $light_gray:#F9F9F9;
     }
     .second_page_block1 {
         display: none;            
-        width: 34%;
+        width: 24%;
         height: 50em;
         margin-top: 3%;
-        margin-left: 0%;
+        margin-left: -5%;
         background: url('./assets/Rectangle1.png') no-repeat;
         background-size: cover;
     }
     .second_page_block2 {
         display: none;
-        width: 33%;
+        width: 25%;
         margin-top: 15%;
-        margin-left: -15%;
+        margin-left: 0%;
         h2 {
             font-size: 3em;
         }
@@ -157,13 +158,14 @@ $light_gray:#F9F9F9;
     }
     .second_page_block3 {
         display: none;
-        width: 27em;
+        width: 23%;
         margin-top:8%;
         margin-left: -5%; 
         background: url('./assets/Rectangle2.png') no-repeat; 
         background-size: cover;
     }
     .numbers {
+        width: 10%;
         list-style: none;
         margin-top: 10em;
         margin-left: -5em;        
@@ -217,7 +219,7 @@ input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
     border: 0;
 }
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1366px){
     header .contact_buttons {
         width: 30%; 
     }
@@ -225,7 +227,7 @@ input[type="submit"]::-moz-focus-inner {
     .top_main {
     .third_part {
         .main_info {
-            width: 40em;
+            width: 70%;
             height: 20em;            
             top: 25%;
             left: -10%;                
@@ -238,8 +240,8 @@ input[type="submit"]::-moz-focus-inner {
                 font-size: 1em;
             }
         }        
-        width: 55em;
-        height: 35em;        
+        width: 70%;
+        height: 45em;        
     }
 }
     .second_page_block1 {                   
@@ -267,13 +269,195 @@ input[type="submit"]::-moz-focus-inner {
 }
 }
 @media only screen and (max-width:1280px){
-    
+    .header {
+        .logo {
+            margin-left: 5%;
+            width: 8%;
+            height: 3em;
+        }
+        .menu {
+            width: 50%;
+        }
+    }
+    .main_container {
+        .top_main {
+        .first_part {
+            p {
+                font-size: 0.9em;
+            }
+        }        
+        .third_part {
+            .main_info {
+                width: 70%;
+                height: 20em;            
+                top: 25%;
+                left: -10%;                
+                h1 {                
+                    font-size: 3em;                
+                }
+                .read_more {                
+                    height: 2em;
+                    width: 10em;
+                    font-size: 0.9em;
+                }
+            }        
+            width: 70%;
+            height: 45em;        
+        }
+    }
+} 
+}
+@media only screen and (max-width:980px){
+    .header {
+        .logo {            
+            width: 7%;
+            height: 2.5em;
+        }
+        .contact_buttons {
+            .contact_us {
+                display: none;
+            }
+        }
+    }
+    .main_container {
+        .top_main {
+        .first_part {
+            p {
+                font-size: 0.9em;
+            }
+        }        
+        .third_part {
+            .main_info {
+                width: 70%;
+                height: 20em;            
+                top: 25%;
+                left: -10%;                
+                h1 {                
+                    font-size: 3em;                
+                }
+                .read_more {                
+                    height: 2em;
+                    width: 10em;
+                    font-size: 0.9em;
+                }
+            }        
+            width: 70%;
+            height: 45em;        
+        }
+    }
+    .second_page_block2 {       
+        
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+    }
+} 
+}
+@media only screen and (max-width:980px){
+    .header {
+        .logo {            
+            width: 7%;
+            height: 2.5em;
+        }
+        .contact_buttons {
+            .contact_us {
+                display: none;
+            }
+        }
+    }
+    .main_container {
+        .top_main {
+        .first_part {
+            p {
+                font-size: 0.9em;
+            }
+        }        
+        .third_part {
+            .main_info {                               
+                h1 {                
+                    font-size: 2.5em;                
+                }
+                
+            }       
+                   
+        }
+    }
+    }
 }
 @media only screen and (max-width:768px){
-    
+    .header {
+        .logo {            
+            width: 6%;
+            height: 2em;
+        }
+        .menu{
+            font-size: 0.9em;
+        }
+        .contact_buttons {
+            margin-top: 5%;
+            margin-left: -5%;
+            .contact_us {
+                display: none;
+            }
+        }
+    }
+    .main_container {
+        .top_main {
+        .first_part {
+            p {
+                font-size: 0.6em;
+            }
+        }        
+        .third_part {
+            .main_info {                               
+                h1 {                
+                    font-size: 2em;                
+                }
+                
+            }       
+                   
+        }
+    }
+    .second_page_block1 {
+        width: 40%;
+        height: 25em;
+    }
+    .second_page_block3 {
+        width: 1%;
+        visibility: hidden;
+    }
+    } 
 }
 @media only screen and (max-width:540px){
-    
+    .header {
+        .logo {            
+            width: 6%;
+            height: 1.8em;
+        }
+        .menu{
+            font-size: 0.8em;
+            margin-left: -10%;
+        }
+        .contact_buttons {
+            margin-top: 7%;
+            margin-left: -15%;
+            
+        }
+    }
+    .main_container {
+        .top_main {
+            .third_part {
+                height: 33em;
+            }
+        }
+        .second_page_block1 {            
+            height: 20em;
+            margin-left: -10%;
+        }
+    }
 }
 @media only screen and (max-width:480px){
     

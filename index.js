@@ -13,9 +13,6 @@ let two_block1 = document.getElementsByClassName('second_page_block1')[0];
 let two_block2 = document.getElementsByClassName('second_page_block2')[0];
 let two_block3 = document.getElementsByClassName('second_page_block3')[0];
 
-phone.onclick = function(){
-  phone.innerHTML = `<i class="fas fa-phone-alt"></i> 375 29 222 22 22`;
-}
 num1.onclick = function() {
   num1.style.color = "#6FCBFF";
   num2.style.color = "#414141";
