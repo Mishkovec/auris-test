@@ -275,6 +275,8 @@ input[type="submit"]::-moz-focus-inner {
   .header .contact_buttons .contact_us {
     display: none; }
 
+  .main_container .main_text {
+    display: none; }
   .main_container .top_main .first_part p {
     font-size: 0.9em; }
   .main_container .top_main .third_part .main_info h1 {
@@ -312,10 +314,73 @@ input[type="submit"]::-moz-focus-inner {
     margin-top: 7%;
     margin-left: -15%; }
 
-  .main_container .top_main .third_part {
-    height: 33em; }
+  .main_container {
+    flex-direction: column; }
+    .main_container .top_main .third_part {
+      height: 33em; }
+    .main_container .second_page_block1 {
+      height: 30em;
+      width: 70%;
+      align-self: center; }
+    .main_container .second_page_block2 {
+      width: 70%;
+      align-self: center; }
+    .main_container .numbers_block {
+      margin: 0; }
+      .main_container .numbers_block ul {
+        margin-top: 1em;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%; }
+        .main_container .numbers_block ul li {
+          height: 2em; }
+
+  .footer {
+    justify-content: flex-start; } }
+@media only screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: flex-start; }
+    .header .menu {
+      margin-left: -1em; }
+    .header .contact_buttons {
+      display: none; }
+
+  .main_container {
+    flex-direction: column; }
+    .main_container .top_main .third_part {
+      height: 33em; }
+    .main_container .second_page_block1 {
+      margin-left: -5em;
+      height: 20em;
+      width: 50%;
+      align-self: center; }
+    .main_container .second_page_block2 {
+      margin-left: -5em;
+      width: 50%;
+      align-self: center; }
+    .main_container .numbers_block {
+      margin: 0;
+      margin-left: -5em; }
+      .main_container .numbers_block ul {
+        justify-content: center; }
+        .main_container .numbers_block ul li {
+          height: 2em;
+          margin-right: 2em; } }
+@media only screen and (max-width: 375px) {
+  .main_container .top_main .third_part .main_info {
+    width: 60%; }
+    .main_container .top_main .third_part .main_info h1 {
+      font-size: 2em; }
+    .main_container .top_main .third_part .main_info p {
+      font-size: 0.9em; }
   .main_container .second_page_block1 {
-    height: 20em;
-    margin-left: -10%; } }
+    margin-left: -10em; }
+  .main_container .second_page_block2 {
+    margin-left: -10em; }
+  .main_container .numbers {
+    margin-left: -10em; } }
 
 /*# sourceMappingURL=style.css.map */
